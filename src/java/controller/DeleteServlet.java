@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Nathan
  */
-@WebServlet(name = "DeleteServlet", urlPatterns = {"/DeleteServlet"})
+@WebServlet(name = "DeleteServlet", urlPatterns = {"/delete"})
 public class DeleteServlet extends HttpServlet {
 
     /**

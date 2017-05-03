@@ -20,7 +20,7 @@ import model.Customers;
  *
  * @author Nathan
  */
-@WebServlet(name = "UpdateServlet", urlPatterns = {"/UpdateServlet"})
+@WebServlet(name = "UpdateServlet", urlPatterns = {"/updateCustomer"})
 public class UpdateServlet extends HttpServlet {
 
     /**

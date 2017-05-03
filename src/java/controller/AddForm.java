@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Nathan
  */
-@WebServlet(name = "AddForm", urlPatterns = {"/AddForm"})
+@WebServlet(name = "AddForm", urlPatterns = {"/add"})
 public class AddForm extends HttpServlet {
 
     /**

@@ -17,6 +17,11 @@
     <body>
         <h1>Customer Database</h1>
         <%= table %>
+        <div style="text-align: center">
+        <a href ="add">Add A New Games</a>
+        <br> <br>
+        <a href="search.jsp">Search Games</a>
+        </div>
         
     </body>
 </html>

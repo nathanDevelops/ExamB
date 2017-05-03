@@ -66,10 +66,10 @@ public class AddQuery {
             ps.setString(2, customer.getLastName());
             ps.setString(3, customer.getAddr1());
             ps.setString(4, customer.getAddr2());
-            ps.setString(4, customer.getCity());
-            ps.setString(4, customer.getState());
-            ps.setString(4, customer.getZip());
-            ps.setString(4, customer.getEmailAddr());
+            ps.setString(5, customer.getCity());
+            ps.setString(6, customer.getState());
+            ps.setString(7, customer.getZip());
+            ps.setString(8, customer.getEmailAddr());
             
             ps.executeUpdate();
             
