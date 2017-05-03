@@ -39,10 +39,10 @@ public class Customers {
         this.lastName = lastName;
         this.addr1 = addr1;
         this.addr2 = addr2;
-        this.addr2 = city;
-        this.addr2 = state;
-        this.addr2 = zip;
-        this.addr2 = emailAddr;
+        this.city = city;
+        this.state = state;
+        this.zip = zip;
+        this.emailAddr = emailAddr;
     }
 
     public int getCustID() {

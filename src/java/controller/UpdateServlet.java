@@ -5,7 +5,7 @@
  */
 package controller;
 
-import dbhelpers.AddQuery;
+import dbhelpers.UpdateQuery;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
@@ -20,8 +20,8 @@ import model.Customers;
  *
  * @author Nathan
  */
-@WebServlet(name = "AddServlet", urlPatterns = {"/AddServlet"})
-public class AddServlet extends HttpServlet {
+@WebServlet(name = "UpdateServlet", urlPatterns = {"/UpdateServlet"})
+public class UpdateServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -40,10 +40,10 @@ public class AddServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet AddServlet</title>");            
+            out.println("<title>Servlet UpdateServlet</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet AddServlet at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet UpdateServlet at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -62,7 +62,7 @@ public class AddServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-        doPost(request, response);
+            doPost(request, response);
     }
 
     /**
@@ -77,7 +77,7 @@ public class AddServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-        //get the data
+            int custID = Integer.parseInt(request.getParameter("custID"));
             String firstName = request.getParameter("firstName");
             String lastName = request.getParameter("lastName");
             String addr1 = request.getParameter("addr1");
@@ -87,8 +87,8 @@ public class AddServlet extends HttpServlet {
             String zip = request.getParameter("zip");
             String emailAddr = request.getParameter("emailAddr");
             
-            //set up a friend object
             Customers customer = new Customers();
+            customer.setCustID(custID);
             customer.setFirstName(firstName);
             customer.setLastName(lastName);
             customer.setAddr1(addr1);
@@ -98,18 +98,13 @@ public class AddServlet extends HttpServlet {
             customer.setZip(zip);
             customer.setEmailAddr(emailAddr);
             
-            //set up an addQuery object
-            AddQuery aq = new AddQuery();
+            UpdateQuery uq = new UpdateQuery();
+            uq.doUpdate(customer);
             
-            //pass the friend to addQuery to add to the database
-            
-            aq.doAdd(customer);
-            
-            //pass execution control to the ReadServlet
             String url = "/read";
             
             RequestDispatcher dispatcher = request.getRequestDispatcher(url);
-            dispatcher.forward (request, response);
+            dispatcher.forward(request, response);
     }
 
     /**
