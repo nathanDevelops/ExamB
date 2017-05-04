@@ -30,34 +30,36 @@
                     <br>
             
             
-                    <label>First Name:</label>
-                        <input type="text" name="firstName" value="" size="20" />
+                    <label>*First Name:</label>
+                        <input type="text" name="firstName" value="" size="20" required/>
                     <br>
-                    <label>Last Name:</label>
-                        <input type="text" name="lastName" value="" size="20" />
+                    <label>*Last Name:</label>
+                        <input type="text" name="lastName" value="" size="20" required/>
                     <br>
-                    <label>Address 1:</label>
-                        <input type="text" name="addr1" value="" size="20" />
+                    <label>*Address 1:</label>
+                        <input type="text" name="addr1" value="" size="20" required/>
                     <br>
                     <label>Address 2:</label>
                         <input type="text" name="addr2" value="" size="20" />
                     <br>
-                    <label>City:</label>
-                        <input type="text" name="city" value="" size="20" />
+                    <label>*City:</label>
+                        <input type="text" name="city" value="" size="20" required/>
                     <br>
-                    <label>State:</label>
-                        <input type="text" name="state" value="" size="20" />
+                    <label>*State:</label>
+                        <input type="text" name="state" value="" size="20" required/>
                     <br>
-                    <label>Zip Code:</label>
-                        <input type="text" name="zip" value="" size="20" />
+                    <label>*Zip Code:</label>
+                        <input type="text" name="zip" value="" size="20" required/>
                     <br>
-                    <label>Email Address:</label>
-                        <input type="text" name="emailAddr" value="" size="20" />
+                    <label>*Email Address:</label>
+                        <input type="text" name="emailAddr" value="" size="20" required/>
                     <br>
                     <br>
                     <div style="text-align: center">
                     <input type="submit" name="submit" value="submit" />
                     </div>
+                    <br>
+                    <label>*Required Information</label>
             </form>
             </div>
         </div>
