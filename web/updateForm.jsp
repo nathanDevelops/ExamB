@@ -19,7 +19,7 @@
      
                 <div class="center">
 
-                <form name="updateForm" action="updateCustomer" method="get">
+                <form name="updateForm" action="updateCustomer" method="post">
                     <h3>Update a Customer</h3>
                     <hr width="90%" color="white">
 

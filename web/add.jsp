@@ -16,7 +16,7 @@
         <div class="main">
                 <div class="center">
 
-                <form name="addForm" action="addCustomer" method="get">
+                <form name="addForm" action="addCustomer" method="post">
                     <h3>Add a New Customer</h3>
                     <hr width="90%" color="white">
 

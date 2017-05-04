@@ -17,7 +17,7 @@
                 <div class="center">
                 <h1>Search Customers</h1>
 
-                <form name="searchForm" action="search" method="get">
+                <form name="searchForm" action="search" method="post">
 
                     <input type="text" name="searchVal" value="" />
 
