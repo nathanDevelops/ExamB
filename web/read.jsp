@@ -10,6 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <link rel="stylesheet" type="text/css" href="examCSS.css"/>
     </head>
     
     <% String table = (String) request.getAttribute("table"); %>
@@ -18,9 +19,9 @@
         <h1>Customer Database</h1>
         <%= table %>
         <div style="text-align: center">
-        <a href ="add">Add A New Games</a>
+        <a href ="add">Add A New Customer</a>
         <br> <br>
-        <a href="search.jsp">Search Games</a>
+        <a href="search.jsp">Search Customers</a>
         </div>
         
     </body>

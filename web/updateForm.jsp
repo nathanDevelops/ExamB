@@ -12,8 +12,15 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <link rel="stylesheet" type="text/css" href="examCSS.css"/>
     </head>
     <body>
+        
+        <div class="wrap">
+            
+            <%@ include file="includes/header.jsp" %>
+            
+            <%@ include file="includes/menu.jsp" %>
         
         <div class="main">
      
@@ -57,6 +64,8 @@
                             </div>
                     </form>
                 </div>
+        </div>
+          <%@ include file="includes/footer.jsp" %>
         </div>
     </body>
 </html>
