@@ -5,6 +5,11 @@ body{
     border-color: white;
 }
 
+p{
+    
+    text-align: left
+}
+
 tr{
     
     background-color: #F08080;
@@ -36,6 +41,11 @@ th{
     
 }
 
+.searchAlignRight{
+    
+    float: right;
+}
+
 table{
     
         margin: auto;
@@ -53,8 +63,8 @@ h1{
 }
 
 a{
-    
     color: #696969;
+    
    
 }
 
@@ -74,7 +84,7 @@ input{
 
 form    {
     
-        background-color: #F08080;
+        
         color: white;
         padding-top: 25px;
         padding-bottom: 50px;
@@ -105,7 +115,7 @@ input[readonly]{
 
 .header{
 	
-        text-align: left; padding:25px;
+        text-align: center; padding:25px;
 }
 
 .headerImg{

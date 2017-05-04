@@ -57,13 +57,14 @@ public class SearchQuery {
         }
     }
     
-    public void doSearch(String firstName){
+    public void doSearch(String firstName, String lastName){
         
         try {
-            String query = "SELECT * FROM CUSTOMERS_T WHERE UPPER(FIRSTNAME) LIKE ? ORDER BY CUSTID ASC";
+            String query = "SELECT * FROM CUSTOMERS_T WHERE UPPER(FIRSTNAME) LIKE ? OR UPPER(LASTNAME) LIKE ? ORDER BY CUSTID ASC";
             
             PreparedStatement ps = conn.prepareStatement(query);
             ps.setString(1, "%" + firstName.toUpperCase() + "%");
+            ps.setString(2, "%" + lastName.toUpperCase() + "%");
             this.results = ps.executeQuery();
         } catch (SQLException ex) {
             Logger.getLogger(SearchQuery.class.getName()).log(Level.SEVERE, null, ex);

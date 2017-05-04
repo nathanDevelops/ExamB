@@ -26,11 +26,7 @@
 
                 <form name="searchForm" action="search" method="post">
 
-                    <input type="text" name="searchVal" value="" />
-
-                    <br><br>
-
-                    <input type="submit" name="submit" value="Search" />
+                    <input type="text" name="searchVal" value="" /><input type="submit" name="submit" value="Search" />
 
                 </form>
                 </div>

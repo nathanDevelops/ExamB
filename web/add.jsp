@@ -14,6 +14,12 @@
     </head>
     <body>
         
+        <div class="wrap">
+            
+            <%@ include file="includes/header.jsp" %>
+            
+            <%@ include file="includes/menu.jsp" %>
+        
         <div class="main">
                 <div class="center">
 
@@ -54,6 +60,8 @@
                     </div>
             </form>
             </div>
+        </div>
+             <%@ include file="includes/footer.jsp" %>
         </div>
     </body>
 </html>

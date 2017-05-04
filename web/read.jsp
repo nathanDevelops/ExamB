@@ -16,12 +16,21 @@
     <% String table = (String) request.getAttribute("table"); %>
     
     <body>
-        <h1>Customer Database</h1>
-        <%= table %>
-        <div style="text-align: center">
-        <a href ="add">Add A New Customer</a>
-        <br> <br>
-        <a href="search.jsp">Search Customers</a>
+        
+        <div class="wrap">
+            
+            <%@ include file="includes/header.jsp" %>
+            
+            <%@ include file="includes/menu.jsp" %>
+            
+            <br><br><br><br><br>
+            <div style="float: center">
+                <a href ="add">Add A New Customer</a>
+            </div>
+            <%= table %>
+           
+            
+            <%@ include file="includes/footer.jsp" %>
         </div>
         
     </body>

@@ -1,3 +1,6 @@
+<link rel="stylesheet" type="text/css" href="examCSS.css"/>
+
+
 <div class="header">
 	
 	
@@ -6,7 +9,7 @@
 		</div>
 		
 		<div class="headerText">
-			<h1> Welcome to Software Design HW 6 </h1>
+			<h1> Customer Application For Some Business </h1>
 		</div>
 		
 		<br clear="all">

@@ -77,10 +77,11 @@ public class SearchServlet extends HttpServlet {
             throws ServletException, IOException {
         
             String firstName = request.getParameter("searchVal");
+            String lastName = request.getParameter("searchVal");
             
             SearchQuery sq = new SearchQuery();
             
-            sq.doSearch(firstName);
+            sq.doSearch(firstName, lastName);
             String table = sq.getHTMLTable();
             
             request.setAttribute("table", table);
